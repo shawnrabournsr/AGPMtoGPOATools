@@ -116,7 +116,7 @@ foreach ($row in $rows) {
         continue
     }
 
-    Write-Log "MOVE: $guid from '$currentContainer' → '$targetPath'"
+    Write-Log "MOVE: $guid from '$currentContainer' --> '$targetPath'"
 
     if (-not $DryRun) {
         try {
