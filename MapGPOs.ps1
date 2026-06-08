@@ -118,6 +118,17 @@ foreach ($row in $rows) {
 
     Write-Log "MOVE: $guid from '$currentContainer' --> '$targetPath'"
 
+    $gpoguid = Get-GPO -Guid $guid -ErrorAction SilentlyContinue
+
+    if ($gpoguid) {
+        Write-Log $gpoguid.DisplayName
+    } 
+    else {
+    Write-Log "GPO not found in AD"
+    }
+
+
+
     if (-not $DryRun) {
         try {
             Move-Item -Path $currentPath -Destination $targetPath -Force
