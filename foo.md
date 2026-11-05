@@ -1,0 +1,1 @@
+Eversource;PROD;91c369b5-1c9e-439c-989c-1867ec606603;e4b2da97-48b3-40ed-84f3-d3717fbb9595;AZ_Migrate;Eversource;4b8e65e7-1971-441a-b0ff-1b85e6b7d512;724cc82b-d307-4d42-b251-c400a1de2570;https://discoverysrv.wus2.prod.migration.windowsazure.com/;westus2;false
